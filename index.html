@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <meta name="description" content="Portfólio de Dilnatã Novaes — Desenvolvedor Front-End e Python. Projetos com HTML, CSS, JavaScript e Python.">
+    <meta name="author" content="Dilnatã Novaes">
+    <meta name="keywords" content="Dilnatã, portfolio, desenvolvedor, HTML, CSS, Python, Front-End, Tornado, PostgreSQL">
+
+    <!-- Título da aba -->
+    <title>Portfólio — Dilnatã Novaes</title>
+
+    <!-- Favicon (ícone da aba) -->
+    <link rel="icon" type="image/png" href="assets/images/IMG20210110175538.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="css/media_queries.css">
+
+    <link rel="stylesheet" href="js/main.js">
+
+    <!-- Cor da aba (para mobile) -->
+    <meta name="theme-color" content="#d66a4a">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="site-header">
+        <div class="container">
+            <h1 id="site-title">Dilnatã</h1>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+            </nav>
+            <button id="toggle-theme" aria-label="Alternar tema">
+  🌙
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content" class="container">
+        <!-- About -->
+        <section id="sobre" class="card">
+            <img src="assets/images/dilnata1.png" alt="Foto de perfil" class="perfil" />
+            <div>
+                <h2>Sobre mim</h2>
+                <p>Sou <strong>Dilnatã Novaes Gomes</strong>, tenho <strong>25</strong> anos moro em <strong>Salvador</strong> e sou <strong>solteiro</strong>.
+                    <br> Tenho como objetivo crescer profissionalmente na carreira de programação,
+                    <br>me desenvolver em comunicação e capitalizar investimentos em grandes projetos.</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="habilidades" class="card">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox, Grid...)</li>
+                <li>Responsividade / Media Queries</li>
+                <li>JavaScript intermediário</li>
+                <li>Python (Tornado, PostgreSQL)</li>
+            </ul>
+        </section>
+        <!-- Projects -->
+        <section id="projetos" class="card">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <!-- cada projeto será um article -->
+                 <article class="projeto">
+                    <img src="assets/projects/python1.png" alt="Projeto 1" />
+                    <h3>Sistema de Estoque em Python</h3>
+                    <p>CRUD completo desenvolvido com Tornado e PostgreSQL, permitindo cadastro e controle de produtos.</p>
+                 </article>
+                 
+                 <article class="projeto">
+                    <img src="assets/projects/python2.png" alt="Projeto 2" />
+                    <h3>To-Do List em Python</h3>
+                    <p>Aplicação interativa em Python com interface de linha de comando e biblioteca Tabulate.</p>
+                </article>
+                
+            </div>
+
+            <div class="projetos-grid">
+                <article class="projeto">
+                    <div class="img-projetos3">
+                        <img src="assets/projects/JavaScript-logo1.png" alt="Projeto 2" />
+                    </div>
+                    <h2>JavaScript</h2>
+                    <h3>Desenvolvedor Front-End (Projeto Prático / Portfólio)</h3>
+                    <p>Criação de Plataforma Web Responsiva: Desenvolvimento da interface 
+                        e usabilidade de um site interativo utilizando HTML5 estruturado 
+                        e CSS3 avançado (Flexbox/Layouts Dinâmicos). Injeção de Inteligência 
+                        com JS (ES6+): Criação de componentes dinâmicos na interface (como menus laterais interativos estilo Amazon, 
+                        headers responsivos e filtragem de produtos) manipulando o DOM e eventos de forma eficiente. 
+                        Clean Code e Organização: Estruturação do projeto seguindo boas práticas de design visual (tratamento técnico de assets e imagens) 
+                        e código modularizado para garantir carregamento rápido e escalabilidade.
+                    </p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Contact / Form -->
+        <section id="contato" class="card">
+            <div class="contato-info">
+                <h2>Entre em contato comigo:</h2>
+                <h3>(71)982728379</h3>
+            </div>
+
+            <div class="contato-info">
+                <h2>email:</h2>
+                <h3>dilnatanovaes@gmail.com</h3>
+            </div>
+        </section>
+        
+        <!-- Contact / Form -->
+        <section id="contato" class="card">
+
+            <h2>Teste:</h2>
+            <form action="#" method="post" id="form-contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" style="color: black" required />
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" style="color: black" required />
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" style="color: black"></textarea>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn secondary">Limpar</button>
+                </div>
+            </form>
+            <div class="redes-sociais">
+                <h3>Minhas Redes</h3>
+                <ul>
+                    <li><a href="https://github.com/Dilnata" target="_blank">🐙GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/dilnat%C3%A3-novaes-gomes-786620292/?originalSubdomain=br" target="_blank">💼 LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/dilnatang/?utm_source=qr&igsh=MXZuZjYzYjFlMnhiNQ%3D%3D#" target="_blank">📸 Instagram</a></li>
+                </ul>
+            </div>
+        </section>    
+    </main>
+
+    <!-- Footer -->
+     <footer id="site-footer">
+        <div class="container">
+            <p>&copy; <span id="ano"></span> - Dilnatã. Todos os direitos reservados.</p>
+        </div>
+     </footer>
+
+     <script src="js/main.js"></script>
+</body>
+</html>
